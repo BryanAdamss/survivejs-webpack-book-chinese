@@ -9,6 +9,16 @@
   "imageSize": 64,
   "commit": true,
   "commitConvention": "angular",
-  "contributors": [],
+  "contributors": [
+    {
+      "login": "BryanAdamss",
+      "name": "GuangHui",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/7441504?v=4",
+      "profile": "https://bryanadamss.github.io/",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ],
   "contributorsPerLine": 7
 }
