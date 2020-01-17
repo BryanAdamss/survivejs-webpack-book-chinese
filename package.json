@@ -20,7 +20,9 @@
     "contributor:add": "all-contributors add",
     "contributor:generate": "all-contributors generate",
     "release": "standard-version",
-    "release:first": "npm run release --first-release"
+    "release:first": "npm run release --first-release",
+    "tag": "git push --follow-tags origin master",
+    "pub": "npm run tag && npm publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^8.3.5",
