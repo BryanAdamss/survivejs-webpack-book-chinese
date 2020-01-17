@@ -1,0 +1,64 @@
+{
+  "name": "survivejs-webpack-book-chinese",
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "survivejs/webpack 中文版",
+  "repository": "https://github.com/BryanAdamss/survivejs-webpack-book-chinese.git",
+  "author": "Juho Vepsäläinen<bebraw@gmail.com>(https://github.com/bebraw)",
+  "contributors": [
+    {
+      "name": "BryanAdamss",
+      "email": "BryanAdamss@foxmail.com",
+      "url": "https://github.com/BryanAdamss"
+    }
+  ],
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
+    "commit": "git-cz",
+    "contributor:add": "all-contributors add",
+    "contributor:generate": "all-contributors generate",
+    "release": "standard-version",
+    "release:first": "npm run release --first-release"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^8.3.5",
+    "@commitlint/config-conventional": "^8.3.4",
+    "all-contributors-cli": "^6.12.0",
+    "commitizen": "^4.0.3",
+    "cz-conventional-changelog": "^3.0.2",
+    "husky": "^4.0.10",
+    "lint-staged": "^9.5.0",
+    "prettier": "^1.19.1",
+    "standard-version": "^7.0.1",
+    "vuepress": "^1.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "survivejs",
+    "compile",
+    "bundle",
+    "chunk",
+    "webpack",
+    "chinese",
+    "cn",
+    "zh-CN"
+  ]
+}
