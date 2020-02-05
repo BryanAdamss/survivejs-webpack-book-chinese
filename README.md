@@ -7,6 +7,7 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 survivejs/webpack-book 中文版
+> 原书链接：https://github.com/survivejs/webpack-book
 
 ## Contributors ✨
 
